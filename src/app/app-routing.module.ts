@@ -1,8 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {Routes, RouterModule} from '@angular/router';
+import {DashboardModule} from './dashboard/dashboard.module';
 
-const routes: Routes = []
+const routes: Routes = [
+    {
+        path: '',
+        redirectTo: 'dashboard',
+        pathMatch: 'full'
+    },
+    {
+      path: 'dashboard',
+      loadChildren: 'app/dashboard/dashboard.module#DashboardModule'
+    }
+]
 
 
 @NgModule({
