@@ -16,8 +16,9 @@ export class AppComponent {
   balance;
 
   constructor() {
+    // this.web3.setProvider(new Web3.providers.HttpProvider('http://host.url', 0, BasicAuthUsername, BasicAuthPassword));
     console.log('web3 loaded', this.web3)
-    // console.log('coinbase', this.web3.eth.coinbase)
+    this.web3.eth.getCoinbase().then(resp => console.log('coinbase is', resp));
     // console.log('coinbase', this.web3.eth.getBalance(coinbase);
   }
 }
