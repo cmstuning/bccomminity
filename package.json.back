@@ -1,11 +1,11 @@
 {
-  "name": "upgrade",
+  "name": "community",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -22,9 +22,15 @@
     "@angular/material": "^5.1.0",
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
+    "@angular/platform-server": "^5.2.2",
     "@angular/router": "^5.2.0",
+    "angularfire2": "^5.0.0-rc.5-next",
     "core-js": "^2.4.1",
+    "firebase": "^4.9.0",
+    "install": "^0.10.4",
+    "npm": "^5.6.0",
     "rxjs": "^5.5.6",
+    "web3": "^1.0.0-beta2",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {

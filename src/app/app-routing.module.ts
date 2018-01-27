@@ -12,7 +12,11 @@ const routes: Routes = [
     {
       path: 'dashboard',
       loadChildren: 'app/dashboard/dashboard.module#DashboardModule'
-    }
+  },
+  {
+    path: 'web3',
+    loadChildren: 'app/web3/web3.module#Web3Module'
+  }
 ]
 
 
